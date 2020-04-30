@@ -840,8 +840,7 @@ def remap_image(name, img, small, page_dims, params):
 
 def dewarpFromIm(img):
   small = resize_to_screen(img)
-  basename = os.path.basename(imgfile)
-  name, _ = os.path.splitext(basename)
+  name = 'a'
 
 
   pagemask, page_outline = get_page_extents(small)
